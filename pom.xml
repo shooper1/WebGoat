@@ -163,8 +163,8 @@
         <sonar.host.url>http://secureci:9000/sonar</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
-		<sonar.projectName>wgSAST</sonar.projectName>
-		<sonar.projectKey>my:wgSAST</sonar.projectKey>
+		<!--<sonar.projectName>wgSAST</sonar.projectName>-->
+		<!--<sonar.projectKey>my:wgSAST</sonar.projectKey>-->
     </properties>
 
     <modules>
