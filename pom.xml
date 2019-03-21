@@ -160,6 +160,11 @@
         <tomcat7-maven-plugin.version>2.3-SNAPSHOT</tomcat7-maven-plugin.version>
         <versioneye-maven-plugin.version>3.5.1</versioneye-maven-plugin.version>
         <wsdl4j.version>1.6.3</wsdl4j.version>
+        <sonar.host.url>http://secureci:9000/sonar</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
+		<sonar.projectName>wgSAST</sonar.projectName>
+		<sonar.projectKey>my:wgSAST</sonar.projectKey>
     </properties>
 
     <modules>
@@ -208,6 +213,11 @@
             </dependencies>
             <build>
                 <plugins>
+                    <plugin>
+				        <groupId>org.sonarsource.scanner.maven</groupId>
+				        <artifactId>sonar-maven-plugin</artifactId>
+				        <version>3.2</version>
+			        </plugin>
 				    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
